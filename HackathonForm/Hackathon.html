@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon Registration | TechCorp</title>
+    <link rel="stylesheet" href="hackathon.css" />
+  </head>
+  <body>
+    <div class="binary-rain"></div>
+
+    <div class="form-container">
+      <h2>🚀 Hackathon Registration</h2>
+      <form
+        action="https://script.google.com/macros/s/AKfycbziftParJS-eYLjgncZnFfx_-ai-OQ8GZdXULpQQCI7H8O6v7maenyyPlNGAR73xpcT/exec"
+        method="post"
+      >
+        <label for="name">Full Name</label>
+        <input type="text" name="name" required autofocus />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" required />
+
+        <label>Gender</label>
+        <select name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required />
+
+        <label>Favorite Coding Language</label>
+        <input type="text" name="language" placeholder="Python, C++, Java..." />
+
+        <label for="bio">Bio</label>
+        <textarea
+          name="bio"
+          rows="3"
+          placeholder="Tell us about yourself..."
+        ></textarea>
+
+        <hr
+          style="border: 0.5px solid rgba(0, 153, 255, 0.5); margin: 15px 0"
+        />
+
+        <h3 class="section-title">🏆 Team Registration</h3>
+
+        <label for="team-name">Team Name</label>
+        <input
+          type="text"
+          name="team-name"
+          placeholder="Enter your team name"
+          required
+        />
+
+        <label for="team-size">Team Size</label>
+        <select name="team-size" required>
+          <option value="1">1 (Solo)</option>
+          <option value="2">2 Members</option>
+          <option value="3">3 Members</option>
+          <option value="4">4 Members</option>
+          <option value="5">5 Members</option>
+        </select>
+
+        <label for="github">GitHub Repository (Optional)</label>
+        <input
+          type="url"
+          name="github"
+          placeholder="https://github.com/your-project"
+        />
+
+        <label for="project-idea">Project Idea</label>
+        <textarea
+          name="project-idea"
+          rows="3"
+          placeholder="Briefly describe your project..."
+        ></textarea>
+
+        <label>Hackathon Experience</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="experience" value="Yes" required />
+            Yes</label
+          >
+          <label
+            ><input type="radio" name="experience" value="No" required />
+            No</label
+          >
+        </div>
+
+        <button type="submit">Register Now</button>
+      </form>
+    </div>
+    <script src="hackathon.js"></script>
+  </body>
+</html>
